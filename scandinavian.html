@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Скандинавський стиль</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .style-hero {
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.style-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.overlay h1 {
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #ebdcdc;
+}
+
+.style-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 20px;
+  line-height: 1.7;
+}
+
+.lead {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.info-block {
+  margin-top: 30px;
+  padding: 20px;
+  background: #3c4744;
+  border-radius: 10px;
+}
+
+.info-block h3 {
+  margin-bottom: 10px;
+}
+
+.info-block ul {
+  padding-left: 20px;
+} 
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a1a1d, #0f2027);
+  color: #eaeaea;
+}
+.back-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.back-button a:hover {
+  background: white;
+  color: black;
+}
+</style>
+<body>
+
+
+
+
+<section class="style-hero">
+  <img src="skandi.jpg">
+  <div class="overlay">
+    <h1>Скандинавський стиль</h1>
+  </div>
+</section>
+
+
+<section class="style-page">
+
+  <p class="lead">
+    Скандинавський стиль — це поєднання простоти, світла та природності.
+  </p>
+
+  <p>
+    Основна ідея цього стилю — створення максимально комфортного та світлого простору.
+    Використовуються світлі кольори, натуральні матеріали, мінімум декору та багато
+    природного освітлення.
+  </p>
+
+  <div class="info-block">
+    <h3>Основні риси:</h3>
+    <ul>
+      <li>Світла кольорова гама</li>
+      <li>Дерево та натуральні матеріали</li>
+      <li>Мінімалізм у деталях</li>
+      <li>Функціональність</li>
+    </ul>
+  </div>
+
+</section>
+
+<div class="back-button">
+  <a href="index.html">← Повернутись на головну</a>
+</div>
+
+<footer>
+  Автор сайту: Катренко Єлизавета
+</footer>
+
+</body>
+</html>
