@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Стилі інтер'єру</title>
+  <link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0f0f10;
+  color: #eaeaea;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(15,15,16,0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.styles {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.style-card {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.style-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  transition: 0.5s;
+}
+
+.style-card:hover img {
+  transform: scale(1.05);
+}
+
+.style-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.style-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.style-content a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.page {
+  padding: 120px 20px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+
+.page img {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+html {
+      scroll-behavior: smooth;
+    }
+</style>
+
+<header>
+  <nav>
+      <a href="#">Головна</a>
+      <div>
+      <a href="#scandinavian">Скандинавський</a>
+      <a href="#loft">Лофт</a>
+      <a href="#minimalism">Мінімалізм</a>
+      <a href="#boho">Бохо</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+  <h1>Дизайн інтер’єру як мистецтво простору</h1>
+  <p class="hero-subtitle">
+      Дизайн інтер'єру — це галузь дизайну та мистецтво оформлення внутрішнього простору приміщень,
+      спрямована на створення естетичного, 
+      <br>функціонального, безпечного та комфортного середовища
+      для життя, роботи або відпочинку людини.</br>
+    </p>
+    </div>
+</section>
+
+
+<section class="styles">
+
+  <div id="scandinavian" class="style-card">
+    <img src="skandi.jpg">
+    <div class="style-content">
+      <h2>Скандинавський</h2>
+      <a href="scandinavian.html">Переглянути →</a>
+    </div>
+  </div>
+
+  <div id="loft" class="style-card">
+    <img src="loft.jpg">
+    <div class="style-content">
+      <h2>Лофт</h2>
+      <a href="loft.html">Переглянути →</a>
+    </div>
+  </div>
+
+  <div id="minimalism" class="style-card">
+    <img src="minimalism.jpg">
+    <div class="style-content">
+      <h2>Мінімалізм</h2>
+      <a href="minimalism.html">Переглянути →</a>
+    </div>
+  </div>
+
+  <div id="boho" class="style-card">
+    <img src="boho.jpg">
+    <div class="style-content">
+      <h2>Бохо</h2>
+      <a href="boho.html">Переглянути →</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  Автор сайту: Катренко Єлизавета
+</footer>
+
+
+
+
+
+
+
+</body>
+</head>
